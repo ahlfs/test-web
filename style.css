@@ -1,14 +1,51 @@
-.text {
-    color: red;
-    justify-content: center;
+.container-buat-image {
+  display: flex;
+  justify-content: center;
+}
+
+.container-buat-teks {
+  display: inline;
+  margin-left: 30px;
+}
+
+.container-buat-tugas {
+  display: flex;
+  justify-content: center;
+}
+
+.outlineku {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  margin: 30px 30px 30px 30px;
+  border-style: dashed;
+}
+
+.container-buat-judul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: red;
+  border-radius: 30px;
+  padding: 20px 20px 20px 20px;
+  margin-top: 30px;
+}
+#teks-judul {
+  font-weight: bolder;
+  color: white;
+}
+#teks-subjudul {
+  color: white;
+}
+
+.container-buat-isi {
+  display: inline;
+  margin-bottom: 30px;
 }
 
 .imageku {
-    width: 200px;
-    height: 200px;
-}
-
-#h1gweh {
-    color: yellow;
-    
+  width: 300px;
+  height: 300px;
+  border-radius: 30px;
 }
