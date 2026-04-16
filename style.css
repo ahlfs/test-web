@@ -54,11 +54,11 @@ nav {
   display: flex;
   justify-content: center;
 }
-ul li {
+nav ul li {
   list-style: none;
 }
 
-ul {
+nav ul {
   display: flex;
   gap: 30px;
 }
