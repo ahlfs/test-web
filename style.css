@@ -49,3 +49,16 @@
   height: 300px;
   border-radius: 30px;
 }
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+ul li {
+  list-style: none;
+}
+
+ul {
+  display: flex;
+  gap: 30px;
+}
