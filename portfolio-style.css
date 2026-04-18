@@ -1,0 +1,285 @@
+/* Global */
+
+:root {
+  --primary-biru: #73a5ca;
+  --putih: #fefddf;
+  --hitam: #222222;
+  --secondary-kuning: #FBEF76;
+  --secondary-orange: #e87f24;
+  --secondary-merah: #F63049;
+  --card-bg: rgba(255, 255, 255, 0.26);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-image: url(assets/gif/background-buat-portfolio.gif);
+  background-size: cover;
+  min-height: 300vh;
+}
+header {
+  background-color: var(--hitam);
+  color: var(--text);
+  padding: 5px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.text-besar {
+  font-size: larger;
+}
+
+.text-sedang {
+  font-size: medium;
+}
+
+.text-kecil {
+  font-size: small;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-miring {
+    font-style: italic;
+}
+
+.text-putih {
+  color: var(--putih);
+}
+
+.text-hitam {
+    color: var(--hitam);
+}
+
+.text-merah {
+    color: var(--secondary-merah);
+}
+
+.text-kuning {
+  color: #ffc81e;
+}
+
+.button-cta {
+    background-color: #e87f24;
+    border-radius: 40px;
+    bottom: 20px;
+    right: 20px;
+    position: fixed;
+    padding: 10px;
+}
+
+/* Profile */
+
+.card-untuk-profile {
+  background-color: var(--card-bg);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  max-height: auto;
+  margin-top: 40px;
+  overflow: hidden;
+}
+
+.card-untuk-profile .container-gambar {
+  width: 60%;
+  height: auto;
+}
+.card-untuk-profile .container-gambar img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-untuk-profile .container-identitas {
+  width: 40%;
+  display: inline;
+  margin-left: 40px;
+  margin-right: 40px;
+  align-self: center;
+}
+
+.section-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Project */
+
+.section-project {
+    display: flex;
+    margin: 30px;
+    justify-content: space-between;
+}
+.card-untuk-project {
+    background-color: var(--card-bg);
+    border-radius: 30px;
+    display: flex;
+    justify-content: left;
+    width: 30%;
+    padding: 20px;
+    flex-direction: column;
+}
+.card-untuk-project .info-project {
+    display: flex;
+}
+.card-untuk-project .info-project .container-gambar {
+    width: 40%;
+    height: auto;
+}
+.card-untuk-project .info-project .container-gambar img{
+    width: 100%;
+    height: 100%;
+}
+
+.card-untuk-project .info-project .container-text {
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+}
+
+.card-untuk-project .info-project .container-text p {
+   margin: 5px;
+}
+
+.card-untuk-project .container-yutub-image {
+    height: auto;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.card-untuk-project .container-yutub-image img {
+    height: auto;
+    width: 100%;
+}
+
+.card-untuk-project .container-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.card-untuk-project .container-button a {
+    width: 30%;
+}
+.card-untuk-project .container-button a button {
+    border-radius: 30px;
+    background-color: #e87f24;
+    
+    height: auto;
+    padding: 20px;
+}
+
+/* Sosmed */
+
+.card-untuk-sosmed {
+    padding: 10px;
+    background-color: var(--hitam);
+    border-radius: 40px;
+}
+
+.card-untuk-sosmed ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.card-untuk-sosmed ul li {
+    text-decoration: none;
+    margin: 15px;
+    
+    color: var(--putih);
+}
+
+.card-untuk-sosmed ul li img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Skill */
+
+.section-skill {
+    display: flex;
+    margin: 30px;
+    justify-content: space-between;
+}
+.card-untuk-skill {
+    background-color: var(--card-bg);
+    border-radius: 30px;
+    display: flex;
+    justify-content: left;
+    width: 20%;
+    padding: 20px;
+    flex-direction: column;
+}
+.card-untuk-skill .info-skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-untuk-skill .info-skill .container-gambar{
+    width: 100%;
+    height: auto;
+}
+
+.card-untuk-skill .info-skill .container-gambar img{
+    width: 10%;
+    height: 10%;
+}
+
+.card-untuk-skill .info-skill .container-text {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-untuk-skill .info-skill .container-text p {
+   margin: 5px;
+}
+
+/* Ini menggunakan glassmorph (copy dari https://hype4.academy/tools/glassmorphism-generator) */
+.glass-card {
+  backdrop-filter: blur(46px);
+  -webkit-backdrop-filter: blur(46px);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 26px 13px rgba(255, 255, 255, 1.3);
+  position: relative;
+  overflow: hidden;
+}
+.glass-card::before {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.8),
+    transparent
+  );
+}
+.glass-card::after {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.8),
+    transparent,
+    rgba(255, 255, 255, 0.3)
+  );
+}
+/* Ini buat responsive */
+@media (min-width: 768px) {
+}
