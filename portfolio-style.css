@@ -61,12 +61,16 @@ header {
 }
 
 .button-cta {
-    background-color: #e87f24;
+    background-color: var(--secondary-orange);
     border-radius: 40px;
     bottom: 20px;
     right: 20px;
     position: fixed;
     padding: 10px;
+}
+
+.button-cta:hover {
+    background-color: var(--secondary-kuning);
 }
 
 /* Profile */
@@ -148,7 +152,7 @@ header {
 }
 
 .card-untuk-project .container-yutub-image {
-    height: auto;
+    height: 40%;
     width: 100%;
     margin-top: 10px;
     border-radius: 30px;
@@ -171,10 +175,14 @@ header {
 }
 .card-untuk-project .container-button a button {
     border-radius: 30px;
-    background-color: #e87f24;
+    background-color: var(--secondary-orange);
     
     height: auto;
     padding: 20px;
+}
+
+.card-untuk-project .container-button a button:hover {
+    background-color: var(--secondary-kuning);
 }
 
 /* Sosmed */
@@ -252,6 +260,99 @@ header {
    margin: 5px;
 }
 
+
+/* Contact */
+.section-contact {
+    display: flex;
+    margin: 30px;
+    justify-content: center;
+}
+.card-untuk-contact {
+    background-color: var(--card-bg);
+    border-radius: 30px;
+    display: flex;
+    width: 50%;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-untuk-contact .form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px 24px;
+  gap: 16px;
+  text-align: center;
+}
+
+.card-untuk-contact .form .title {
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.card-untuk-contact .form .subtitle {
+  font-size: 16px;
+  color: #666;
+}
+
+.card-untuk-contact .form .container-form-input{
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #fff;
+  margin-top: 15px;
+  width: 100%;
+  
+}
+
+.card-untuk-contact .form .container-form-textarea {
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #fff;
+  margin-top: 8px;
+  width: 100%;
+  
+}
+
+.card-untuk-contact .form .container-form-input input {
+  background: none;
+  border: 0;
+  outline: 0;
+  height: 20px;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  padding: 8px 15px;
+}
+
+.card-untuk-contact .form .container-form-textarea textarea {
+  background: none;
+  border: 0;
+  outline: 0;
+  height: 40px;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  padding: 8px 15px;
+}
+
+.card-untuk-contact .form button {
+  background-color: #0066ff;
+  color: #fff;
+  border: 0;
+  border-radius: 24px;
+  padding: 10px 16px;
+  font-size: 16;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color .3s ease;
+}
+
+.card-untuk-contact .form button:hover {
+  background-color: #005ce6;
+}
+
+
 /* Ini menggunakan glassmorph (copy dari https://hype4.academy/tools/glassmorphism-generator) */
 .glass-card {
   backdrop-filter: blur(46px);
@@ -281,5 +382,93 @@ header {
   );
 }
 /* Ini buat responsive */
-@media (min-width: 768px) {
+
+@media (max-width: 1200px) {
+
+  /* Profile */
+
+.card-untuk-profile {
+  width: 70%;
 }
+
+/* Skill */
+
+.card-untuk-skill {
+   width: 18%;
+}
+
+/* Project */
+
+.card-untuk-project {
+  width: 27%;
+}
+
+}
+
+@media (max-width: 768px) {
+
+  /* Profile */
+
+.card-untuk-profile {
+  flex-direction: column;
+  width: 70%;
+}
+
+.card-untuk-profile .container-gambar {
+  width: 100%;
+  height: auto;
+}
+
+.card-untuk-profile .container-identitas {
+  width: 80%;
+  display: inline;
+  margin-left: 40px;
+  margin-right: 40px;
+  align-items: center;
+}
+
+/* Skill */
+.section-skill {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.card-untuk-skill {
+    width: 80%;
+}
+
+/* Project */
+.section-project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.card-untuk-project {
+    width: 80%;
+}
+
+/* Contact */
+.section-contact {
+    display: flex;
+    margin: 30px;
+    justify-content: center;
+}
+.card-untuk-contact {
+    background-color: var(--card-bg);
+    border-radius: 30px;
+    display: flex;
+    width: 80%;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-untuk-contact .container-form {
+    margin: 0;
+}
+
+
+}
+
+
