@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Internal CSS</title>
+    <h1>Latihan - Internal CSS</h1>
+
+    <style>
+        .container-gweh {
+            display: flex;
+        }
+
+        .container-gweh img {
+            width: 30%;
+        }
+
+        .container-gweh .container-identitas {
+            flex-direction: column;
+            margin-left: 40px;
+            align-self: center;
+        }
+
+        .container-identitas #text-merah-tebal {
+            color: red; 
+            font-weight: bold;
+        }
+
+        #text-biru-tipis {
+            color: #170C79;
+        }
+
+        .container-gweh .container-identitas button {
+            background-color: aqua;
+            color: black;
+            border-radius: 30px;
+            padding: 20px;
+            font-size: 20px;
+
+        }
+
+        .container-gweh .container-identitas button img {
+            width: 30px;
+            height: 30px;
+
+        }
+    </style>
+  </head>
+  <body style="background-color: #8acbd0">
+    <div class="container-gweh">
+      <img src="assets/images/harith-kolam.png" alt="CUMA EVOSS" />
+      <div class="container-identitas">
+      <h2 id="text-merah-tebal">Muhamad Alamsyah Ahlul Firdaus</h2>
+      <p id="text-biru-tipis">Informatika</p>
+      <button onclick="alert('CUMA EVOS')"><img src="assets/svg/evoslogo.svg"> Click</button>
+      </div>
+    </div>
+  </body>
+</html>

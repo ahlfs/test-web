@@ -1,0 +1,35 @@
+.container-gweh {
+  display: flex;
+}
+
+.container-gweh img {
+  width: 30%;
+}
+
+.container-gweh .container-identitas {
+  flex-direction: column;
+  margin-left: 40px;
+  align-self: center;
+}
+
+.container-identitas #text-merah-tebal {
+  color: red;
+  font-weight: bold;
+}
+
+#text-biru-tipis {
+  color: #170c79;
+}
+
+.container-gweh .container-identitas button {
+  background-color: aqua;
+  color: black;
+  border-radius: 30px;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.container-gweh .container-identitas button img {
+  width: 30px;
+  height: 30px;
+}

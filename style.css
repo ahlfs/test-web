@@ -57,6 +57,19 @@ nav {
 nav ul li {
   list-style: none;
 }
+nav ul li a {
+  font-weight: bold;
+  text-decoration: none;
+  padding: 5px;
+  border-style: double;
+  border-radius: 30px;
+}
+
+nav ul li a:hover {
+  background-color: plum;
+  color: white;
+  transition-duration: 500ms;
+}
 
 nav ul {
   display: flex;
