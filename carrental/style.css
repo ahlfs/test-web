@@ -1,7 +1,14 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
+:root {
+    font-family: "Mona Sans";
+}
+
 #search {
     width: 100%;
     height: 50em;
-    background-image: url("https://images.unsplash.com/photo-1610809376778-928ee2c3a561?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-image: url("car_assets/others/hero-bg.jpg");
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -11,6 +18,8 @@
 
 body {
     margin: 0;
+    background-color: #fcfcfa;
+    background-size: cover;
 }
 
 .title {
@@ -22,6 +31,39 @@ body {
     font-size: 3em;
     margin: 0;
 }
+
+.title .header1 {
+    font-family: "Yesteryear", cursive;
+    font-size: 4em;
+    margin: auto;
+    padding: 30px;
+    border-radius: 20px 20px 0 0;
+    background-color: #d0ff00;
+    width: fit-content;
+    color: #111112;
+}
+
+.title .header2 {
+    font-size: 4em;
+    margin: 0;
+    padding: 5px;
+    background-color: #111112;
+    border-radius: 10px 10px 20px 20px;
+    color: #d0ff00;
+}
+
+.title .header3 {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+    font-style: italic;
+    background-color: #D0FF00;
+    color: #111112;
+    text-decoration: underline;
+    font-weight: 600;
+    border-radius: 50px;
+}
+
+
 
 .title p {
     font-size: 1.5em;
@@ -37,63 +79,148 @@ body {
 }
 
 .form-container {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 3em;
     border-radius: 1em;
-    color: white;
+    color: #f5f5ed;
     gap: 2em;
+    font-weight: 600;
+}
+
+.form-container .form-group {
+    flex-direction: column;
 }
 
 .form-container select,
 .form-container input {
     box-sizing: border-box;
     padding: 0.5em;
-    border: none;
+    border: 2px solid #d0ff00;
     border-radius: 0.5em;
     width: 15em;
     height: 2.5em;
+    background-color: transparent;
+    color: #f5f5ed;
 }
 
 .form-container button {
     padding: 0.5em 1em;
     border: none;
     border-radius: 0.5em;
-    background-color: #ff5722;
-    color: white;
+    background-color: #d0ff00;
+    color: #111112;
     cursor: pointer;
+    font-weight: bold;
 }
 
 .car-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-    gap: 1.5em;
+    gap: 3em;
     align-content: center;
     padding: 2em 1em;
     align-items: start;
     max-width: 80rem;
     margin: 0 auto;
+    position: relative;
 }
 
 .car-list h2 {
+    font-family: Yesteryear, cursive;
     font-size: 2em;
     margin: 2em 0;
     grid-column: 1 / -1;
     text-align: center;
+    background-color: #d0ff00;
+    width: fit-content;
+    padding: 0.5em 1em;
+    margin: auto;
 }
 
 .car-item {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     flex-direction: column;
     width: min(22rem, 100%);
+    background-color: #272b20;
+    border-radius: 20px 5px 20px 5px;
+    padding: 20px;
+    color: #f5f5ed;
+    font-weight: bold;
+    box-shadow: 4px 0px 15px -2px #111112;
+}
+
+.car-item .car-spec {
+    background-color: #d0ff00;
+    width: 90%;
+    border-radius: 20px;
+    color: #111112;
+    font-weight: 600;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.car-item .car-spec {
+   font-family: "Yesteryear", cursive;
+   font-size: xx-large;
+}
+
+.car-item .car-spec .car-spec-detail {
+    font-size: medium;
+    font-family: "Mona Sans";
 }
 
 .car-item img {
     width: 100%;
     height: auto;
     object-fit: cover;
+    border-radius: 20px 20px 0 0;
 }
+
+/* ngambil dari https://www.shapedivider.app/ */
+
+.custom-shape-divider-top-1777253802 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1777253802 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 143px;
+}
+
+.custom-shape-divider-top-1777253802 .shape-fill {
+    fill: #D0FF00;
+}
+
+/* reponsive */
+@media (max-width: 600px) {
+    .title {
+        margin-top: 230px;
+    }
+    .car-list h2 {
+        margin-top: 230px;
+    }
+    .car-list {
+        justify-items: center;
+    }
+    .form-container {
+        flex-direction: column;
+        width: 70%;
+    }
+
+}
+

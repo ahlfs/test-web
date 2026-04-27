@@ -1,64 +1,177 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Car Rental</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
 
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="custom-shape-divider-top-1777253802">
+      <svg
+        data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1200 120"
+        preserveAspectRatio="none"
+      >
+        <path
+          d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
+          class="shape-fill"
+        ></path>
+      </svg>
+    </div>
+
     <div id="search">
-        <div class="title">
-            <h1>Car Rental</h1>
-            <p>Find the perfect car for your next adventure</p>
-            <hr>
+      <div class="title">
+        <h1 class="header1">Exotic</h1>
+        <h1 class="header2">Car Rental</h1>
+        <p class="header3">Unleash the Beast. Rule the Road</p>
+        <hr />
+      </div>
+      <div class="form-container">
+        <div class="form-group">
+          <label for="pickup">Rental Location:</label><br /><br />
+          <select id="pickup" name="pickup">
+            <option value="">Select Location</option>
+            <option value="location1">Yogyakarta</option>
+            <option value="location2">Bali</option>
+          </select>
         </div>
-        <div class="form-container">
-            <div class="form-group">
-                <label for="pickup">Rental Location:</label>
-                <select id="pickup" name="pickup">
-                    <option value="">Select Location</option>
-                    <option value="location1">Yogyakarta</option>
-                    <option value="location2">Bali</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="pickup-date">Rental Start Date:</label>
-                <input type="date" id="pickup-date" name="pickup-date">
-            </div>
-            <div class="form-group">
-                <label for="return-date">Rental End Date:</label>
-                <input type="date" id="return-date" name="return-date">
-            </div>
-            <button type="submit">Search</button>
+        <div class="form-group">
+          <label for="pickup-date">Rental Start Date:</label><br /><br />
+          <input type="date" id="pickup-date" name="pickup-date" />
         </div>
+        <div class="form-group">
+          <label for="return-date">Rental End Date:</label><br /><br />
+          <input type="date" id="return-date" name="return-date" />
+        </div>
+        <button type="submit">Search</button>
+      </div>
     </div>
 
     <div class="car-list">
-        <h2>Car List</h2>
-        <div class="car-item">
-            <img src="url" alt="Car 1">
-            <h3>Car 1</h3>
-            <p>Car Detail</p>
-        </div>
-        <div class="car-item">
-            <img src="url" alt="Car 2">
-            <h3>Car 2</h3>
-            <p>Car Detail</p>
-        </div>
-        <div class="car-item">
-            <img src="url" alt="Car 2">
-            <h3>Car 2</h3>
-            <p>Car Detail</p>
-        </div>
-        <div class="car-item">
-            <img src="url" alt="Car 2">
-            <h3>Car 2</h3>
-            <p>Car Detail</p>
-        </div>
-    </div>
-</body>
+      <h2>C A R - L I S T</h2>
 
+      <div class="car-item">
+        <img src="car_assets/car/toyota-supra-smokey-nagata.jpg" alt="Car 1" />
+        <h3>Top Secret Supra MK4 V12</h3>
+        <div class="car-spec">
+          <p>Specifications</p>
+          <div class="car-spec-detail">
+            <p>Engine: 5.0-liter 1GZ-FE V12</p>
+            <p>Power: 930 - 1,000+ HP</p>
+            <p>Torque: 745 lb-ft</p>
+            <p>Turbos: Twin HKS/Top Secret turbochargers</p>
+            <p>Top Speed: 357 km/h</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="car-item">
+        <img src="car_assets/car/porsche-911-akira-nakai.jpg" alt="Car 1" />
+        <h3>Porsche 911 RWB</h3>
+        <div class="car-spec">
+          <p>Specifications</p>
+          <div class="car-spec-detail">
+            <p>Engine: 3.6L Flat-6 Air-Cooled</p>
+            <p>Power: 300 HP</p>
+            <p>Top Speed: 260 km/h</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="car-item">
+        <img src="car_assets/car/toyota-ae86-driftking.jpg" alt="Car 1" />
+        <h3>DK Toyota AE86 Trueno</h3>
+        <div class="car-spec">
+          <p>Specifications</p>
+          <div class="car-spec-detail">
+            <p>Engine: 1.6L 4A-GE 20-Valve Blue Top</p>
+            <p>Power: 200 HP</p>
+            <p>Weight: 950 kg (Ultra Lightweight)</p>
+            <p>Top Speed: 200 km/h</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="car-item">
+        <img src="car_assets/car/mazda-rx7-rei-amemiya.jpeg" alt="Car 1" />
+        <h3>Mazda RX-7 FC3S</h3>
+        <div class="car-spec">
+          <p>Specifications</p>
+          <div class="car-spec-detail">
+            <p>Engine: 1.3L 13B-REW Twin-Rotor</p>
+            <p>Power: 450 - 600 HP</p>
+            <p>Turbos: GReddy Single Turbo Conversion</p>
+            <p>Top Speed: 300 km/h</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="car-item">
+        <img src="car_assets/car/nissan-gtr-smokey-nagata.jpg" alt="Car 1" />
+        <h3>Nissan GTR R34 Fusion RR</h3>
+        <div class="car-spec">
+          <p>Specifications</p>
+          <div class="car-spec-detail">
+            <p>Engine: 2.6L RB26DETT Inline-6</p>
+            <p>Power: 900 - 1,000 HP</p>
+            <p>Torque: 900 Nm</p>
+            <p>Turbos: Twin HKS GT Pro Turbos</p>
+            <p>Top Speed: 320+ km/h</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="car-item">
+        <img src="car_assets/car/mazda-rx7-hans.webp" alt="Car 1" />
+        <h3>Veilside Mazda RX-7</h3>
+        <div class="car-spec">
+          <p>Specifications</p>
+          <div class="car-spec-detail">
+            <p>Engine: 1.3L 13B-REW Rotary</p>
+            <p>Power: 306 HP</p>
+            <p>Body Kit: Veilside Fortune Widebody</p>
+            <p>Top Speed: 250 km/h</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="car-item">
+        <img src="car_assets/car/nissan-350z-dk.webp" alt="Car 1" />
+        <h3>DK Nissan 350Z</h3>
+        <div class="car-spec">
+          <p>Specifications</p>
+          <div class="car-spec-detail">
+            <p>Engine: 3.5L VQ35DE V6</p>
+            <p>Power: 450 HP</p>
+            <p>Turbos: APS Twin Turbo System</p>
+            <p>Top Speed: 280 km/h</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="car-item">
+        <img src="car_assets/car/bmw-m3gtr-razor.webp" alt="Car 1" />
+        <h3>NFSMW BMW M3 GTR</h3>
+        <div class="car-spec">
+          <p>Specifications</p>
+          <div class="car-spec-detail">
+            <p>Engine: 4.0L P60B40 V8</p>
+            <p>Power: 500 HP</p>
+            <p>Transmission: Straight-Cut Gears</p>
+            <p>Top Speed: 305 km/h</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
