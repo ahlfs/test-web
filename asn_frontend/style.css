@@ -1,0 +1,234 @@
+/* font dari google font */
+@import url("https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chewy&display=swap");
+:root {
+  font-family: "Mona Sans";
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  background-color: #f5f5ed;
+  padding: 1em;
+  z-index: 676767;
+}
+header .container-buat-logo {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+header .container-buat-logo h3 {
+  font-family: "Chewy", cursive;
+  font-size: 1.5em;
+  color: #ffa02e;
+  margin: 0;
+}
+
+header .container-buat-logo img {
+  width: 30px;
+  height: auto;
+}
+
+header .container-buat-navigasi {
+  width: 70%;
+}
+
+header .container-buat-navigasi nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  gap: 2em;
+  margin: 0;
+  padding: 0;
+}
+header .container-buat-navigasi nav ul li a {
+  font-family: "Mirenda", cursive;
+  color: #111112;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+header .container-buat-navigasi nav ul li a:hover {
+  color: #ffa02e;
+}
+
+
+.hero {
+  width: 100%;
+  height: 50em;
+  background-image: url("assets/images/hero-bg.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+body {
+  margin: 0;
+  background-color: #fcfcfa;
+  background-size: cover;
+}
+
+.title {
+  color: white;
+  text-align: center;
+}
+
+.title h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.title .logo-geprek {
+  width: 200px;
+  height: auto;
+}
+
+.title .badge {
+  width: 100px;
+  height: auto;
+  background-color: #ffa02e;
+  color: #f5f5ed;
+  border-radius: 20px;
+  font-family: "Mierenda", cursive;
+  padding: 0.2em;
+  font-weight: bold;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.title .header1 {
+  font-family: "Merienda", cursive;
+  font-size: 4em;
+  margin: auto;
+
+  border-radius: 20px 20px 0 0;
+  width: fit-content;
+  color: #f5f5ed;
+}
+
+.title .header2 {
+  font-size: 4em;
+  margin: 0;
+  padding: 5px;
+  border-radius: 10px 10px 20px 20px;
+  color: #ffa02e;
+}
+
+.title .header3 {
+  font-size: 1.5em;
+  margin: 0.5em 0;
+  font-style: italic;
+  color: #f5f5ed;
+  font-weight: 600;
+  border-radius: 50px;
+}
+
+.title p {
+  font-size: 1.5em;
+  margin: 0.5em 0;
+}
+
+.title hr {
+  width: 50em;
+  max-width: 90vw;
+  border: 1px solid white;
+  margin: 3em auto;
+  opacity: 0.5;
+}
+
+.produk-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 3em;
+  align-content: center;
+  padding: 2em 1em;
+  align-items: start;
+  max-width: 80rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.produk-list h2 {
+  font-family: "Merienda", cursive;
+  font-size: 2em;
+  margin: 2em 0;
+  grid-column: 1 / -1;
+  text-align: center;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #ffa02e;
+  border-radius: 20px;
+  width: fit-content;
+  padding: 0.5em 1em;
+  margin: auto;
+  z-index: 1;
+}
+
+.produk-item {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  width: min(22rem, 100%);
+  background-color: #fcfcfa;
+  border-radius: 20px;
+  color: #ffa02e;
+  font-weight: bold;
+  box-shadow: 2px 0px 7px -2px #111112;
+}
+
+.produk-item h3 {
+  font-family: "Merienda", cursive;
+  margin-left: 10px;
+}
+
+.produk-item h4 {
+  color: #111112;
+  margin-left: 10px;
+  font-weight: bold;
+  padding: 0.7em;
+  border-radius: 20px;
+  background-color: #ffa02e;
+}
+
+.produk-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+footer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  background-color: #ffa02e;
+  color: #f5f5ed;
+}
+
+/* untuk responsive mobile */
+@media (max-width: 600px) {
+  header .container-buat-logo h3 {
+    display: none;
+  }
+  .title {
+    margin-top: 230px;
+  }
+  .produk-list h2 {
+    margin-top: 230px;
+  }
+  .produk-list {
+    justify-items: center;
+  }
+}
