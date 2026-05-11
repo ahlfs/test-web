@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Chewy&display=swap");
+
+:root {
+  --primary-kuning: #ffde42;
+  --merah-kece: #fb4525;
+  --secondary-gelap: #4c5c2d;
+  --bg-deep: #313e17;
+  --hitam-paling-gelap: #1b0c0c;
+  --putih: #f8fafc;
+  --card-bg: rgba(255, 255, 255, 0.03);
+  --border-color: rgba(255, 255, 255, 0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background-color: var(--hitam-paling-gelap);
+  color: var(--putih);
+  line-height: 1.6;
+}
+
+.icon-toko h2 {
+  font-weight: 600;
+  font-family: "Chewy", cursive;
+  margin-bottom: 20px;
+}
+
+.icon-toko span {
+  font-weight: 600;
+  font-family: "Chewy", cursive;
+}
+
+.text-kuning {
+  color: var(--primary-kuning);
+}
+
+.text-merah {
+  color: var(--merah-kece);
+}
+
+footer {
+  text-align: left;
+  padding: 60px 8%;
+  opacity: 0.6;
+  border-top: 1px solid var(--border-color);
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.text-kecil {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.text-sedang {
+  font-size: 1.1rem;
+}
+
+.text-besar {
+  font-size: clamp(2rem, 5vw, 3rem);
+  letter-spacing: -1.5px;
+  line-height: 1.1;
+}
+
+.text-extra-besar {
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-miring {
+  font-style: italic;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* glass morph dari https://ui.glass/generator */
+
+.glass-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
+
+.navbar {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2000;
+  width: auto;
+  max-width: 90%;
+}
+
+.container-buat-nav {
+  display: flex;
+  background: rgba(27, 12, 12, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 10px 25px;
+  border-radius: 24px;
+  border: 1px solid var(--border-color);
+  gap: 10px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: var(--putih);
+  padding: 8px 12px;
+  border-radius: 16px;
+  transition: all 0.3s;
+  min-width: 65px;
+}
+
+.icon-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4px;
+}
+
+.icon-nav img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.text-nav {
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  opacity: 0.6;
+}
+
+.nav-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-item:hover .text-nav {
+  opacity: 1;
+  color: var(--primary-kuning);
+}
+
+.button-buat-cta {
+  background: var(--primary-kuning);
+  width: 65px;
+  height: 65px;
+  border-radius: 20px;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  z-index: 1001;
+  transition: all 0.3s;
+}
+
+.button-buat-cta span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-buat-cta img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.button-buat-cta:hover {
+  transform: none;
+  background: var(--primary-kuning);
+}
+
+.sub-page-hero {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(27, 12, 12, 0.5),
+      var(--hitam-paling-gelap)
+    ),
+    url("assets/images/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  padding: 0 8%;
+}
+
+.sub-page-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  text-align: center;
+}
+
+/* buat rresponsive  */
+@media (max-width: 768px) {
+  .text-nav {
+    display: none;
+  }
+  .button-buat-cta {
+    width: 55px;
+    height: 55px;
+    bottom: 25px;
+    right: 25px;
+  }
+}
